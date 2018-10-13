@@ -1,23 +1,51 @@
-\documentclass[russian,]{article}
+\documentclass[russian,]{report}
 
+\usepackage{graphics}
+\usepackage[utf8]{inputenc}
+%\usepackage[shorthands=off,main=russian]{babel}
 
-\usepackage{listings}
-\usepackage{color}
+\title{mirmpage}
+\author{mirmik}
 
-\title{Listings}
-\author{}
+\frenchspacing
+\pagestyle{plain}
 
-
-\sffamily font-family:sans-serif
 \newstyle{body}{background: url("back.jpg"); color: white}
-%\newstyle{.verbatim}{margin:1ex 1ex;padding:1ex;background:\#ccffcc;}
+
+\htmlhead {
+	\begin{rawhtml}
+		<div class="container">
+    	    <h1>BujinNotes</h1>
+    	    <h2>mirmikwashere</h2>
+    	    <h2>
+    	      <a href="https://vk.com/mirkei">vk.com</a>
+    	    </h2>
+    	    <h2>
+    	      <a href="/">index.html</a>
+    	      <a href="/poetry">poetry.html</a>
+    	      <a href="/bujin">bujin.html</a>
+    	      <a href="/technique">technique.html</a>
+    	    </h2>
+    	  </div>
+
+	\end{rawhtml}
+}
+
 
 \begin{document}
 
 Hello
 
+\part*{Part One}
+\chapter*{one}
 \input{1c}
+\chapter*{two}
 \input{2c}
+
+\part*{Part Two}
 \input{3c}
+\input{4c}
+
+\tableofcontents
 
 \end{document}
